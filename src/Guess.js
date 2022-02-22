@@ -146,7 +146,12 @@ export function Guess({
               onKeyDown={handleKeydown2}
               ref={(e) => (inputRefs.current[2] = e)}
             />
-            <button onClick={onGuess}>guess</button>
+            <button
+              disabled={!(hex0.value?.length === 2 && hex1.value?.length === 2 && hex2.value?.length === 2)}
+              onClick={onGuess}
+            >
+              guess
+            </button>
             <button
               disabled={!(hex0.value || hex1.value || hex2.value)}
               onClick={handleClear}
