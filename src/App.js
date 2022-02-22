@@ -11,6 +11,7 @@ import Helmet from "react-helmet";
 // get a higher/lower indicator for each.
 
 const color = randomColor();
+const targetColor = color.color;
 // console.log(color);
 
 export default function App() {
@@ -39,12 +40,12 @@ export default function App() {
   const handleGuess = () => {
     setGuesses((g) => [
       ...g,
-      { hex0: currentHex0, hex1: currentHex1, hex2: currentHex2 }
+      { hex0: currentHex0.toUpperCase(), hex1: currentHex1.toUpperCase(), hex2: currentHex2.toUpperCase() }
     ]);
     if (
-      currentHex0 === color.hex0 &&
-      currentHex1 === color.hex1 &&
-      currentHex2 === color.hex2
+      currentHex0.toUpperCase() === color.hex0.toUpperCase() &&
+      currentHex1.toUpperCase() === color.hex1.toUpperCase() &&
+      currentHex2.toUpperCase() === color.hex2.toUpperCase()
     ) {
       setSolved(true);
     }
@@ -54,12 +55,12 @@ export default function App() {
   return (
     <>
       <Helmet>
-        <meta name="theme-color" content={color.color} />
+        <meta name="theme-color" content={targetColor} />
       </Helmet>
       {showHelp && <Help toggle={toggleHelp} />}
-      <div id="color" style={{ backgroundColor: color.color }}>
+      <div id="color" style={{ backgroundColor: targetColor }}>
         <div
-          style={{ color: getAccessibleColor(color.color) }}
+          style={{ color: getAccessibleColor(targetColor) }}
           id="header-content"
         >
           <h1>HEXLE</h1>

@@ -4,11 +4,11 @@ const randomHex = () =>
     .padStart(2, "0");
 
 export const randomColor = () => {
-  const hex0 = randomHex();
-  const hex1 = randomHex();
-  const hex2 = randomHex();
+  const hex0 = randomHex().toUpperCase();
+  const hex1 = randomHex().toUpperCase();
+  const hex2 = randomHex().toUpperCase();
   return {
-    color: `#${hex0}${hex1}${hex2}`,
+    color: `#${hex0}${hex1}${hex2}`.toUpperCase(),
     hex0,
     hex1,
     hex2

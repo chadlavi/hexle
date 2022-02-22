@@ -21,7 +21,7 @@ const hexDiff = (hex0, hex1) => {
 
 const isClose = (hex0, hex1) => {
   if (hex0 === hex1) return false;
-  if (hex0.slice(0) === hex1.slice(0)) return true;
+  if (hex0.toUpperCase().slice(0) === hex1.toUpperCase().slice(0)) return true;
   const diff = Math.abs(hexDiff(hex0, hex1));
   if (diff === 16) return true;
   if (diff < 4) return true;
