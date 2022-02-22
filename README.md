@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# What the hexle?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Hexle](https://chadlavi.github.io/hexle/) challenges you to guess a randomly
+generated CSS [RGB color
+code](https://www.w3schools.com/Css/css_colors_rgb.asp).
 
-## Available Scripts
+## Gameplay
 
-In the project directory, you can run:
+The R (red), G (green), and B (blue) values of the hex code are entered
+separately. Only valid hex color values (i.e., hexadecimal numbers between 00
+and ff) are accepted.
 
-### `npm start`
+You can guess as many times as you want.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Correct values in guesses
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Correctly guessed color values are shown in green.
 
-### `npm test`
+### Close values in guesses
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Close guesses are shown in yellow.
 
-### `npm run build`
+### Other values in guesses
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Guesses that are not close are shown in grey.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Lower/higher indicators
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Guesses that are not correct will have either a lower or higher indicator.
 
-### `npm run eject`
+When the correct value is higher than the value you guessed, there will be a bar
+at the top of the guess.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+When the correct value is lower than the value you guessed, there will be a bar
+at the bottom of the guess.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Comparing your guess to the correct color
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+At the right of the guess, the color you guessed (left) and the correct color
+(right) are shown side by side for easy comparison in making your next guess.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## How many times can I play per day?
 
-## Learn More
+I dunno, like a million I guess? The random color is generated when you load the
+page, and it's different for everyone (unless it happens to be the same; there
+are only 16,581,375 unique hex colors). You can just reload the page to play
+again.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Couldn't I just cheat with dev tools?
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Yeah, sure. Go nuts. I'm not going to stop you. But what's the fun in that?
 
-### Code Splitting
+## Attribution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This game is sorta kinda like wordle.
 
-### Analyzing the Bundle Size
+[Greg Archer](http://gregtaff.com) came up with the original concept for this,
+and [Chad Lavimoniere](http://chadlavimoniere.com) was dumb enough to try to
+build that idea.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
