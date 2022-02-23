@@ -10,6 +10,7 @@
   --theme: blue;
   --bar-color: rgba(209, 140, 140, 0.5);
   --scroll-color: #dddddd;
+  --help-modal-padding: 2rem;
   background-color: var(--background);
   color: var(--text);
 }
@@ -77,30 +78,30 @@ iframe {
   overflow-y: auto;
   margin-bottom: 1rem;
   flex-shrink: 1;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: var(--help-modal-padding);
+  padding-right: var(--help-modal-padding);
 }
 #help-modal-content h1 {
-  padding: 2rem;
+  padding: var(--help-modal-padding);
   padding-bottom: 0.5rem;
 }
 #help-modal-buttons-row {
-  padding: 2rem;
+  padding: var(--help-modal-padding);
   padding-top: 0;
   display: flex;
   flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 600px) {
+  :root {
+    --help-modal-padding: 1rem;
+  }
   #help-modal {
     max-width: 100%;
     border-radius: 0;
     max-height: unset;
     min-height: 0;
     height: 100%;
-  }
-  #help-modal-content {
-    padding: 1rem;
   }
 }
 
