@@ -1,10 +1,10 @@
-import { useState } from "react";
 import "./styles.css";
-import { Guess } from "./Guess";
 import { getAccessibleColor, randomColor } from "./randomColor";
-import { QuestionCircleIcon } from "./Icons";
-import { Help } from "./Help";
+import { Guess } from "./Guess";
 import Helmet from "react-helmet";
+import { Help } from "./Help";
+import { QuestionCircleIcon } from "./Icons";
+import { useState } from "react";
 
 // you're given a color, and you have to guess the hex notation.
 // for each guess, the three color values are broken up and you
@@ -12,7 +12,6 @@ import Helmet from "react-helmet";
 
 const color = randomColor();
 const targetColor = color.color;
-// console.log(color);
 
 export default function App() {
   const [showHelp, setShowHelp] = useState(false);
@@ -51,7 +50,7 @@ export default function App() {
     }
     resetCurrentGuess();
   };
-  // console.log({ currentHex0, currentHex1, currentHex2 });
+
   return (
     <>
       <Helmet>

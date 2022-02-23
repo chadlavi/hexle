@@ -1,7 +1,5 @@
 import ClickAwayListener from "react-click-away-listener";
-
 import { CloseIcon } from "./Icons";
-
 import { Guess } from "./Guess";
 
 export function Help({ toggle }) {

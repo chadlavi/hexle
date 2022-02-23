@@ -25,7 +25,21 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "ignorePatterns": ["docs/**/*"],
+    "rules": {
+      "indent": ["error", 2],
+      "no-invalid-regexp": "error",
+      "no-irregular-whitespace": "error",
+      "no-multiple-empty-lines": "error",
+      "no-trailing-spaces": "error",
+      "no-unneeded-ternary": "error",
+      "quotes":"error",
+      "react/jsx-indent-props": ["error", 2],
+      "semi": "error",
+      "sort-imports": "error",
+      "space-infix-ops": "error"
+    }
   },
   "browserslist": {
     "production": [
