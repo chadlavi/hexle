@@ -9,6 +9,7 @@
   --text: black;
   --theme: blue;
   --bar-color: rgba(209, 140, 140, 0.5);
+  --scroll-color: #dddddd;
   background-color: var(--background);
   color: var(--text);
 }
@@ -29,7 +30,8 @@ iframe {
     --modal-background: rgba(0, 0, 0, 0.95);
     --bar-color: rgba(202, 93, 93, 0.75);
     --theme: rgb(87, 87, 230);
-  }
+    --scroll-color: #363636;
+}
 }
 
 * {
@@ -79,9 +81,8 @@ iframe {
   padding-right: 2rem;
 }
 #help-modal-content h1 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
+  padding: 2rem;
+  padding-bottom: 0.5rem;
 }
 #help-modal-buttons-row {
   padding: 2rem;
@@ -267,4 +268,14 @@ p {
 #solved {
   font-size: 1.25rem;
   color: green;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-color);
+  border-radius: 20px;
+  border: 2px solid var(--background);
 }
