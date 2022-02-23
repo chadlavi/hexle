@@ -1,11 +1,15 @@
 export function QuestionCircleIcon(props) {
   return (
-    <svg fill="none" viewBox="0 0 15 15" height="1em" width="1em" {...props}>
+    <svg
+      fill="currentColor"
+      viewBox="0 0 16 16"
+      height="1em"
+      width="1em"
+      {...props}
+    >
       <path
-        fill="currentColor"
         fillRule="evenodd"
-        d="M0 7.5a7.5 7.5 0 1115 0 7.5 7.5 0 01-15 0zM5.5 6a2 2 0 012-2h.6c1.05 0 1.9.85 1.9 1.9V6a2 2 0 01-2 2v1H7V7h1a1 1 0 001-1v-.1a.9.9 0 00-.9-.9h-.6a1 1 0 00-1 1h-1zM7 11v-1h1v1H7z"
-        clipRule="evenodd"
+        d="M16 8A8 8 0 110 8a8 8 0 0116 0zM5.496 6.033a.237.237 0 01-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 01-.25.25h-.81a.25.25 0 01-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"
       />
     </svg>
   );
@@ -13,10 +17,22 @@ export function QuestionCircleIcon(props) {
 
 export function CloseIcon(props) {
   return (
-    <svg fill="none" viewBox="0 0 24 24" height="1em" width="1em" {...props}>
+    <svg
+      fill="currentColor"
+      viewBox="0 0 16 16"
+      height="1em"
+      width="1em"
+      {...props}
+    >
       <path
-        fill="currentColor"
-        d="M6.225 4.811a1 1 0 00-1.414 1.414L10.586 12 4.81 17.775a1 1 0 101.414 1.414L12 13.414l5.775 5.775a1 1 0 001.414-1.414L13.414 12l5.775-5.775a1 1 0 00-1.414-1.414L12 10.586 6.225 4.81z"
+        fillRule="evenodd"
+        d="M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M5 11l6-6m0 6L5 5"
       />
     </svg>
   );

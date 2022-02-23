@@ -97,18 +97,17 @@ export function Help({ toggle }) {
               <h2>Attribution</h2>
               <p>This game is sorta kinda like wordle.</p>
               <p>
-                <a target="_blank" rel="noreferrer" href="http://gregtaff.com">
-                  Greg Archer
-                </a>{" "}
-                came up with the original concept for this, and{" "}
                 <a
                   target="_blank"
                   rel="noreferrer"
                   href="http://chadlavimoniere.com"
                 >
                   Chad Lavimoniere
-                </a>{" "}
-                was dumb enough to try to build that idea. You can see the code for this app on <a target="_blank" rel="noreferrer" href="https://github.com/chadlavi/hexle">github</a>.
+                </a> build this based on an idea by <a target="_blank" rel="noreferrer" href="http://gregtaff.com">
+                  Greg Archer
+                </a>. You can see the code for this app on <a target="_blank" rel="noreferrer" href="https://github.com/chadlavi/hexle">
+                  github
+                </a>.
               </p>
             </div>
             <div id="help-modal-buttons-row">

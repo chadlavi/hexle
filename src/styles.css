@@ -51,7 +51,7 @@ iframe {
 
 #help-modal {
   background-color: var(--background);
-  width: 600px;
+  width: 82ch;
   max-width: 95%;
   max-height: 95%;
   display: flex;
@@ -67,23 +67,25 @@ iframe {
   top: 0.5rem;
 }
 #help-modal-content {
-  padding: 2rem;
   display: flex;
   flex-direction: column;
-  /* max-height: 95vh; */
-  /* flex-shrink: 1; */
   min-height: 0px;
 }
 #help-modal-scroll {
-  /* max-height: 80%; */
   overflow-y: auto;
   margin-bottom: 1rem;
   flex-shrink: 1;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 #help-modal-content h1 {
-  margin-right: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
 }
 #help-modal-buttons-row {
+  padding: 2rem;
+  padding-top: 0;
   display: flex;
   flex-direction: row-reverse;
 }

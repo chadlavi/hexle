@@ -54,7 +54,4 @@ Yeah, sure. Go nuts. I'm not going to stop you. But what's the fun in that?
 
 This game is sorta kinda like wordle.
 
-[Greg Archer](http://gregtaff.com) came up with the original concept for this,
-and [Chad Lavimoniere](http://chadlavimoniere.com) was dumb enough to try to
-build that idea.
-
+[Chad Lavimoniere](http://chadlavimoniere.com) built this based on an idea by [Greg Archer](http://gregtaff.com).
